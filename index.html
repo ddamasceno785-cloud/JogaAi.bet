@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Anti-zoom no celular -->
+    <meta
+        name="viewport"
+        content="width=device-width,
+                 initial-scale=1.0,
+                 maximum-scale=1.0,
+                 minimum-scale=1.0,
+                 user-scalable=no"
+    >
+
+    <title>JogaAi.bet — Demo</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        html {
+            touch-action: manipulation;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #080b12;
+            color: #fff;
+            overflow-x: hidden;
+        }
+
+        header {
+            height: 64px;
+            background: #101522;
+            border-bottom: 1px solid #202838;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            padding: 0 18px;
+
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 22px;
+            font-weight: 700;
+        }
+
+        .logo span {
+            color: #7c5cff;
+        }
+
+        .demo {
+            font-size: 11px;
+            font-weight: bold;
+            color: #b7aaff;
+
+            background: #1b1730;
+            border: 1px solid #342c5c;
+
+            padding: 7px 10px;
+            border-radius: 7px;
+        }
+
+        main {
+            width: 100%;
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px 12px 50px;
+        }
+
+        .notice {
+            background: #111827;
+            border: 1px solid #283246;
+            border-radius: 12px;
+
+            padding: 14px;
+            margin-bottom: 24px;
+
+            color: #aeb8ca;
+            font-size: 13px;
+            line-height: 1.5;
+        }
+
+        .notice strong {
+            color: #fff;
+        }
+
+        .title {
+            margin-bottom: 18px;
+        }
+
+        .title h1 {
+            font-size: 25px;
+            margin-bottom: 5px;
+        }
+
+        .title p {
+            color: #7f8ba1;
+            font-size: 14px;
+        }
+
+        .games {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 16px;
+        }
+
+        .game-card {
+            background: #0f1420;
+            border: 1px solid #202838;
+            border-radius: 14px;
+            overflow: hidden;
+        }
+
+        .game-title {
+            height: 48px;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            padding: 0 13px;
+
+            background: #121827;
+            border-bottom: 1px solid #202838;
+        }
+
+        .game-title strong {
+            font-size: 14px;
+        }
+
+        .tag {
+            font-size: 9px;
+            font-weight: bold;
+
+            color: #a996ff;
+            background: #201b3a;
+
+            padding: 5px 7px;
+            border-radius: 5px;
+        }
+
+        .game-container {
+            width: 100%;
+            min-height: 420px;
+
+            background: #05070c;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .game-container .freedemo-game-widget {
+            width: 100%;
+        }
+
+        footer {
+            text-align: center;
+            color: #667085;
+            font-size: 11px;
+            padding: 25px 10px;
+        }
+
+        @media (max-width: 700px) {
+            .games {
+                grid-template-columns: 1fr;
+            }
+
+            .game-container {
+                min-height: 400px;
+            }
+
+            .logo {
+                font-size: 19px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">
+        JogaAi<span>.bet</span>
+    </div>
+
+    <div class="demo">
+        MODO DEMO
+    </div>
+</header>
+
+<main>
+
+    <div class="notice">
+        <strong>Projeto fictício — somente demonstração.</strong><br>
+        Esta página não possui depósitos, saques ou utilização de dinheiro real.
+    </div>
+
+    <div class="title">
+        <h1>Jogos</h1>
+        <p>Selecione um dos jogos disponíveis na demonstração.</p>
+    </div>
+
+    <div class="games">
+
+        <!-- Fortune Rabbit -->
+        <div class="game-card">
+            <div class="game-title">
+                <strong>Fortune Rabbit</strong>
+                <span class="tag">DEMO</span>
+            </div>
+
+            <div class="game-container">
+                <div
+                    class="freedemo-game-widget"
+                    data-game-slug="fortune-rabbit">
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Fortune Ox -->
+        <div class="game-card">
+            <div class="game-title">
+                <strong>Fortune Ox</strong>
+                <span class="tag">DEMO</span>
+            </div>
+
+            <div class="game-container">
+                <div
+                    class="freedemo-game-widget"
+                    data-game-slug="fortune-ox">
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Fortune Tiger -->
+        <div class="game-card">
+            <div class="game-title">
+                <strong>Fortune Tiger</strong>
+                <span class="tag">DEMO</span>
+            </div>
+
+            <div class="game-container">
+                <div
+                    class="freedemo-game-widget"
+                    data-game-slug="fortune-tiger-pg-soft">
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Gates of Olympus -->
+        <div class="game-card">
+            <div class="game-title">
+                <strong>Gates of Olympus</strong>
+                <span class="tag">DEMO</span>
+            </div>
+
+            <div class="game-container">
+                <div
+                    class="freedemo-game-widget"
+                    data-game-slug="gates-of-olympus">
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Fortune Horse -->
+        <div class="game-card">
+            <div class="game-title">
+                <strong>Fortune Horse</strong>
+                <span class="tag">DEMO</span>
+            </div>
+
+            <div class="game-container">
+                <div
+                    class="freedemo-game-widget"
+                    data-game-slug="fortune-horse">
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Anubis Wrath -->
+        <div class="game-card">
+            <div class="game-title">
+                <strong>Anubis Wrath</strong>
+                <span class="tag">DEMO</span>
+            </div>
+
+            <div class="game-container">
+                <div
+                    class="freedemo-game-widget"
+                    data-game-slug="anubis-wrath">
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Fortune Mouse -->
+        <div class="game-card">
+            <div class="game-title">
+                <strong>Fortune Mouse</strong>
+                <span class="tag">DEMO</span>
+            </div>
+
+            <div class="game-container">
+                <div
+                    class="freedemo-game-widget"
+                    data-game-slug="fortune-mouse">
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</main>
+
+<footer>
+    JogaAi.bet — Ambiente fictício de demonstração.
+</footer>
+
+
+<!--
+    Um único script é suficiente para os widgets acima.
+-->
+<script
+    async
+    src="https://api.freedemo.games/assets/widget/v1/js/game.widget.js?v=20260820_1">
+</script>
+
+</body>
+  </html>
